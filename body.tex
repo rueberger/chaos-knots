@@ -147,12 +147,12 @@ Additionally, we will need the following (\emph{not} isotopic) inflation which t
 
 The symbolic action of $\mathcal{F}^\ast$ is easily computed. For example, given $\mathcal{F}$ as defined above, $\mathcal{F}^*$ is defined as $$\mathcal{F}^*: U \hookrightarrow \V \begin{cases} x_1 \mapsto x_2 x_4 \\ x_2 \mapsto x_2 \\ x_3 \mapsto x_3 \\ x_4 \mapsto x_3 x_4 x_1 \end{cases}$$ Because $\mathcal{F}$ is isotopic, we know that $\mathcal{F}^*$ must be isotopic as well; in addition, $G^*$ is also isotopic.
 
-We finally have the tools we need to give the proof that $\W_q$ can be found in $\V$ for all $q$.
+One final lemma and we will have all of the tools we need to give the proof that $\W_q$ can be found in $\V$ for all $q$:
 
-We must start with a lemma, provided by Ghrist.
+
 \begin{lemma}[Ghrist 1997]
 
-    Given that a subtemplate of $\V$ doesn't contain $x_1^\infty$, it is possible to add an ear near the top branch line, like that in Figure~\ref{fig:appendToV}, which is a positive ear. Similarly, given that a subtemplate of $\V$ doesn't contain $X_3^\infty$, it is possible to add an ear near the bottom branch line, which is a negative ear. Note that this is not an inflation; we are simply adding an ear to the subtemplate.
+    Given that a subtemplate of $\V$ doesn't contain $x_1^\infty$, it is possible to add an ear near the top branch line, like that in Figure~\ref{fig:appendToV}, which is a positive ear. Similarly, given that a subtemplate of $\V$ doesn't contain $x_3^\infty$, it is possible to add an ear near the bottom branch line, which is a negative ear. Note that this is not an inflation; we are simply adding an ear to the subtemplate.\label{lemma:ear}
 \end{lemma}
 
 
@@ -183,7 +183,12 @@ For instance, $\mathcal{G}^\ast$ takes $x_1$ to $x_4 x_2$, which when composed w
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{appendToV.png}
-    \caption{Appending a positive ear to $T$ (left) yields $T^+$ (right). The thin line on (a) is a section of the subtemplate after performing $\mathcal{H}$; to add the positive ear, we widen the subtemplate so that when it splits, one half of the split returns to itself to make an infinite loop, while the other half continues as in the original subtemplate. Figure reproduced from~\cite{Ghrist1996}} \label{fig:appendToV} %%%%%%%%%%%%%%%%%%%%% link below.
+    \caption{Appending a positive ear to $T$ (left) yields $T^+$ (right). The thin line on (a) is a section of the subtemplate after performing $\mathfrak{H}$; to add the positive ear,
+      we widen the subtemplate to the left (from the perspective of the reader). Upon reaching the branch line, the leftmost orbits circle around the ear, the middle orbits fall off the template, and the
+      rightmost orbits continue along  the subtemplate $\mathfrak{H}(\V)$.
+      Some intuition for why Lemma~\ref{ref:ear} excludes subtemplates containing the orbit $x_1^\infty$ can be be built by studying this diagram, as we add the ear to the part of $\V$ which would support $x_1^\infty$
+      where it contained in the subtemplate.
+      Figure reproduced from~\cite{Ghrist1996}}\label{fig:appendToV}
 \end{figure}
 
 
